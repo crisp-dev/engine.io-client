@@ -5,4 +5,3 @@ components
 npm-debug.log
 .idea
 test/support/public/engine.io.min.js
-build/
