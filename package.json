@@ -77,7 +77,7 @@
     "test": "npm run format:check && npm run compile && if test \"$BROWSERS\" = \"1\" ; then npm run test:browser; else npm run test:node; fi",
     "test:node": "mocha --bail --reporter dot --require test/support/server.js test/index.js",
     "test:browser": "zuul test/index.js",
-    "build": "rollup -c support/rollup.config.umd.js && rollup -c support/rollup.config.esm.js",
+    "_build": "rollup -c support/rollup.config.umd.js && rollup -c support/rollup.config.esm.js",
     "format:check": "prettier --check 'lib/**/*.ts' 'test/**/*.js' 'support/**/*.js'",
     "format:fix": "prettier --write 'lib/**/*.ts' 'test/**/*.js' 'support/**/*.js'"
   },
