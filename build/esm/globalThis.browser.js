@@ -1,8 +1,5 @@
 export default (() => {
-    if (typeof self !== "undefined") {
-        return self;
-    }
-    else if (typeof window !== "undefined") {
+    if (typeof window !== "undefined") {
         return window;
     }
     else {
